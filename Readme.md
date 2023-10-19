@@ -6,23 +6,11 @@ This Python script is an implementation of linear regression using gradient desc
 
 Before running the script, make sure you have the following libraries installed:
 
-- [NumPy](https://numpy.org/): For numerical operations.
-- [Pandas](https://pandas.pydata.org/): For data manipulation.
-- [argparse](https://docs.python.org/3/library/argparse.html): For command-line arguments.
-
-You can install these libraries using pip:
-
-```bash
-pip install numpy pandas
-```
+- [NumPy]For numerical operations.
+- [Pandas] For data manipulation.
+- [argparse] For command-line arguments.
 
 ## Usage
-
-To run the script, use the following command:
-
-```bash
-python script_name.py -d data_file.csv -l learning_rate -t convergence_threshold
-```
 
 - `data_file.csv`: The path to the CSV file containing your dataset. The file should have columns for features and a target variable.
 - `learning_rate`: The learning rate controls the step size in gradient descent. It should be a float value (e.g., 0.01).
@@ -38,13 +26,6 @@ The script implements the following steps:
 4. Output the iteration number, weights, and SSE at each iteration.
 5. Stop when the SSE change is smaller than the convergence threshold.
 
-## Example
-
-Here is an example command to run the script:
-
-```bash
-python linear_regression.py -d dataset.csv -l 0.01 -t 0.0001
-```
 
 This will load the dataset from `dataset.csv`, set the learning rate to 0.01, and use a convergence threshold of 0.0001.
 
